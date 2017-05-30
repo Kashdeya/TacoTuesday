@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tt",
+  "name": "Taco Tuesday",
+  "description": "Tacos, Need I say more?",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://minecraft.curseforge.com/projects/taco-tuesday",
+  "updateUrl": "",
+  "authorList": ["Kashdeya"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

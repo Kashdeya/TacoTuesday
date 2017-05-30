@@ -1,0 +1,17 @@
+#Soft
+item.bams_tortilla.name=Soft Tortilla
+item.bams_beef_taco.name=Soft Beef Taco
+item.bams_chicken_taco.name=Soft Chicken Taco
+item.bams_pork_taco.name=Soft Pork Taco
+item.bams_fish_taco.name=Soft Fish Taco
+item.bams_mutton_taco.name=Soft Mutton Taco
+item.bams_rabbit_taco.name=Soft Rabbit Taco
+
+#Crunchy
+item.bams_hard_taco_shell.name=Crunchy Taco Shell
+item.bams_hard_beef_taco.name=Crunchy Beef Taco
+item.bams_hard_chicken_taco.name=Crunchy Chicken Taco
+item.bams_hard_pork_taco.name=Crunchy Pork Taco
+item.bams_hard_fish_taco.name=Crunchy Fish Taco
+item.bams_hard_mutton_taco.name=Crunchy Mutton Taco
+item.bams_hard_rabbit_taco.name=Crunchy Rabbit Taco
