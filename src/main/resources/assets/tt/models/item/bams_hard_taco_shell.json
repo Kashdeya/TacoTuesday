@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "tt:items/bams_hard_taco_shell"
-    }
-}
