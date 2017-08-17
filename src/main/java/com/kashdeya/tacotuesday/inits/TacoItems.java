@@ -1,5 +1,9 @@
 package com.kashdeya.tacotuesday.inits;
 
+import java.util.Iterator;
+import java.util.Set;
+
+import com.google.common.collect.Sets;
 import com.kashdeya.tacotuesday.handlers.ConfigHandler;
 import com.kashdeya.tacotuesday.items.BottledMilk;
 import com.kashdeya.tacotuesday.items.FoodBase;
@@ -28,9 +32,12 @@ import com.kashdeya.tacotuesday.main.Reference;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.IForgeRegistry;
 
 public class TacoItems {
+    static Set<Item> items = Sets.newHashSet();
+    
 	// Soft
 	public static Item soft_tortilla;
 	public static Item soft_beef_taco;
@@ -210,6 +217,15 @@ public class TacoItems {
 	}
 	
 	static void registerItem(Item item, String name){
-	    GameRegistry.register(item, new ResourceLocation(Reference.MOD_ID + ":" + name));
+	    item.setRegistryName(new ResourceLocation(Reference.MOD_ID + ":" + name));
+	    items.add(item);
 	}
+	
+    public static void registerItems(RegistryEvent.Register<Item> event) {
+        IForgeRegistry<Item> registry = event.getRegistry();
+        Iterator<Item> iterator = items.iterator();
+        
+        while(iterator.hasNext())
+            registry.register(iterator.next());
+    }
 }
