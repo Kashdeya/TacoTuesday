@@ -1,9 +1,13 @@
 package com.kashdeya.tacotuesday.main;
 
 import com.kashdeya.tacotuesday.configs.TacoConfig;
+import com.kashdeya.tacotuesday.handlers.ConfigHandler;
 import com.kashdeya.tacotuesday.inits.TacoItems;
 import com.kashdeya.tacotuesday.proxy.CommonProxy;
+import com.kashdeya.tacotuesday.util.MobDrops;
+import com.kashdeya.tacotuesday.util.OreDict;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -36,7 +40,10 @@ public class tacotuesday {
     	PROXY.registerRenderers();
     	
     	// Events
-
+    	OreDict.init();
+    	MinecraftForge.EVENT_BUS.register(instance);
+    	MinecraftForge.EVENT_BUS.register(new MobDrops());
+    	
     }
 
     @EventHandler

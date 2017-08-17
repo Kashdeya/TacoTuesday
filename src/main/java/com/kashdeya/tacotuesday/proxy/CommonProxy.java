@@ -19,9 +19,5 @@ public class CommonProxy {
 	public void registerRenderers() {
 		//unused - only called clientside
 	}
-	
-	public EntityPlayerMP getPlayerEntityFromContext(MessageContext ctx) {
-	    return null;
-	}
 
 }
