@@ -4,6 +4,7 @@ import com.kashdeya.tacotuesday.inits.TacoItems;
 import com.kashdeya.tacotuesday.main.Reference;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.block.statemap.StateMap;
 import net.minecraft.item.Item;
@@ -78,8 +79,11 @@ public class RenderHandler {
 	}
 	  
 	public static void InventoryItemRender(Item item, String itemName) {
-		if(item != null)
-			ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + itemName, "inventory"));
+		if(item == null)
+		    return;
+		
+		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + itemName, "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + itemName, "inventory"));
 	}
 	
 	public static void setCustomStateMap(Block block, StateMap stateMap){

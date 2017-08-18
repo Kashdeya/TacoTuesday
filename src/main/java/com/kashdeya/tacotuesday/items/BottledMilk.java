@@ -30,8 +30,8 @@ public class BottledMilk extends Item {
 	    {
 	      if (!((EntityPlayer)entityLiving).capabilities.isCreativeMode)
 	      {
-	        stack.stackSize -= 1;
-	        if ((stack.stackSize > 0) && (!((EntityPlayer)entityLiving).inventory.addItemStackToInventory(new ItemStack(Items.GLASS_BOTTLE)))) {
+	        stack.setCount(stack.getCount() - 1);
+	        if ((stack.getCount() > 0) && (!((EntityPlayer)entityLiving).inventory.addItemStackToInventory(new ItemStack(Items.GLASS_BOTTLE)))) {
 	          ((EntityPlayer)entityLiving).dropItem(new ItemStack(Items.GLASS_BOTTLE), false);
 	        }
 	      }
@@ -40,7 +40,7 @@ public class BottledMilk extends Item {
 	      }
 	      ((EntityPlayer)entityLiving).addStat(StatList.getObjectUseStats(this));
 	      
-	      return stack.stackSize <= 0 ? new ItemStack(Items.GLASS_BOTTLE) : stack;
+	      return stack.getCount() <= 0 ? new ItemStack(Items.GLASS_BOTTLE) : stack;
 	    }
 	    return stack;
     }
@@ -56,11 +56,11 @@ public class BottledMilk extends Item {
     {
         return EnumAction.DRINK;
     }
-
+    
     @Override
-    public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
+    public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         playerIn.setActiveHand(hand);
-        return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
+        return ActionResult.newResult(EnumActionResult.SUCCESS, playerIn.getHeldItem(hand));
     }
 }

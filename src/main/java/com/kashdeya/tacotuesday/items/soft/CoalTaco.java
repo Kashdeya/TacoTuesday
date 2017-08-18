@@ -2,6 +2,7 @@ package com.kashdeya.tacotuesday.items.soft;
 
 import java.util.List;
 
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -50,7 +51,7 @@ public class CoalTaco extends ItemFood {
     
     @Override
 	@SideOnly(Side.CLIENT)
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean flag)
+    public void addInformation(ItemStack stack, World player, List<String> list, ITooltipFlag flag)
     {
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.sct_1").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.sct_2").getFormattedText());

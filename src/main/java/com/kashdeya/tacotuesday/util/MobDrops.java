@@ -52,7 +52,7 @@ public class MobDrops {
 	
 	@SubscribeEvent
 	public void onEntityDrop(LivingDropsEvent event) {
-			if ((event.getSource().getEntity() instanceof EntityPlayer && ConfigHandler.playerdrops)) {
+			if ((event.getSource().getImmediateSource() instanceof EntityPlayer && ConfigHandler.playerdrops)) {
 				if (event.getEntityLiving() != null) {
 					EntityLivingBase entity = event.getEntityLiving();
 					// Monster
