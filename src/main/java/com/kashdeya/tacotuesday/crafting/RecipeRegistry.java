@@ -1,10 +1,11 @@
-package com.kashdeya.tacotuesday.recipes;
+package com.kashdeya.tacotuesday.crafting;
 
 import java.util.List;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -14,7 +15,15 @@ public class RecipeRegistry
 {
     public static void addShapedRecipe(ItemStack output, Object... inputs)
     {
-        addShapedRecipe(output.getItem().getRegistryName().toString(), output, inputs);
+        int recipeIndex = 0;
+        ResourceLocation name = output.getItem().getRegistryName();
+        
+        while(CraftingManager.REGISTRY.containsKey(name))
+        {
+            name = new ResourceLocation(name.getResourceDomain(), String.format("%s.%d", name.getResourcePath(), recipeIndex++));
+        }
+        
+        addShapedRecipe(name.toString(), output, inputs);
     }
     
     public static void addShapedRecipe(String name, ItemStack output, Object... inputs)
@@ -29,7 +38,15 @@ public class RecipeRegistry
     
     public static void addShapelessRecipe(ItemStack output, Object... inputs)
     {
-        addShapelessRecipe(output.getItem().getRegistryName().toString(), output, inputs);
+        int recipeIndex = 0;
+        ResourceLocation name = output.getItem().getRegistryName();
+        
+        while(CraftingManager.REGISTRY.containsKey(name))
+        {
+            name = new ResourceLocation(name.getResourceDomain(), String.format("%s.%d", name.getResourcePath(), recipeIndex++));
+        }
+        
+        addShapelessRecipe(name.toString(), output, inputs);
     }
     
     public static void addShapelessRecipe(String name, ItemStack output, Object... inputs)

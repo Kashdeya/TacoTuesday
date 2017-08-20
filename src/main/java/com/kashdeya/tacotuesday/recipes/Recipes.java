@@ -1,5 +1,6 @@
 package com.kashdeya.tacotuesday.recipes;
 
+import com.kashdeya.tacotuesday.crafting.RecipeRegistry;
 import com.kashdeya.tacotuesday.inits.TacoItems;
 
 import net.minecraft.init.Items;
