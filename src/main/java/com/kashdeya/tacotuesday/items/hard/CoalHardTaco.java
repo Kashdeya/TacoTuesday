@@ -33,13 +33,13 @@ public class CoalHardTaco extends ItemFood {
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, duration + 10 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, duration + 5 * buffLength, 1, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.FIRE_RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 10 * buffLength, 1, false, false));
         }
     }
     

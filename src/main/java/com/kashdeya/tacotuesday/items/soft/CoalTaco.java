@@ -39,7 +39,7 @@ public class CoalTaco extends ItemFood {
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 30 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 10 * buffLength, 0, false, false));
         }
     }
     

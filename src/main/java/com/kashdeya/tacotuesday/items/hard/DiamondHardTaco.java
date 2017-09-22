@@ -33,31 +33,19 @@ public class DiamondHardTaco extends ItemFood {
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST, duration + 10 * buffLength, 1, false, false));
-        	
-        	potion = player.getActivePotionEffect(MobEffects.REGENERATION);
-            if(potion != null){
-            	duration = potion.getDuration();
-            }
-        	player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, duration + 30 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST, duration + 5 * buffLength, 1, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 10 * buffLength, 1, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.FIRE_RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 60 * buffLength, 1, false, false));
-        	
-        	potion = player.getActivePotionEffect(MobEffects.INSTANT_HEALTH);
-            if(potion != null){
-            	duration = potion.getDuration();
-            }
-        	player.addPotionEffect(new PotionEffect(MobEffects.INSTANT_HEALTH, duration + 10 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 10 * buffLength, 1, false, false));
         }
     }
     
@@ -73,8 +61,6 @@ public class DiamondHardTaco extends ItemFood {
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.hdt_1").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.hdt_2").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.hdt_3").getFormattedText());
-		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.hdt_4").getFormattedText());
-		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.hdt_5").getFormattedText());
     }
 	
 }

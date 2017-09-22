@@ -33,13 +33,13 @@ public class RedstoneTaco extends ItemFood {
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.SPEED, duration + 30 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.SPEED, duration + 10 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.HASTE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.HASTE, duration + 30 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.HASTE, duration + 10 * buffLength, 0, false, false));
         }
     }
     

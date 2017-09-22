@@ -33,13 +33,13 @@ public class QuartzTaco extends ItemFood {
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, duration + 15 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, duration + 5 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.FIRE_RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 30 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 10 * buffLength, 0, false, false));
         }
     }
     

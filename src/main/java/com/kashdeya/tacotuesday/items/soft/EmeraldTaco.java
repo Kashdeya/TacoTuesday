@@ -35,35 +35,23 @@ public class EmeraldTaco extends ItemFood {
             }
         	player.addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST, duration + 5 * buffLength, 0, false, false));
         	
-        	potion = player.getActivePotionEffect(MobEffects.REGENERATION);
-            if(potion != null){
-            	duration = potion.getDuration();
-            }
-        	player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, duration + 15 * buffLength, 0, false, false));
-        	
         	potion = player.getActivePotionEffect(MobEffects.RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 30 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 10 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.SPEED);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.SPEED, duration + 30 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.SPEED, duration + 10 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.SATURATION);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, duration + 30 * buffLength, 0, false, false));
-        	
-        	potion = player.getActivePotionEffect(MobEffects.INSTANT_HEALTH);
-            if(potion != null){
-            	duration = potion.getDuration();
-            }
-        	player.addPotionEffect(new PotionEffect(MobEffects.INSTANT_HEALTH, duration + 5 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, duration + 10 * buffLength, 0, false, false));
         }
     }
     
@@ -80,8 +68,6 @@ public class EmeraldTaco extends ItemFood {
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.set_2").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.set_3").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.set_4").getFormattedText());
-		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.set_5").getFormattedText());
-		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.set_6").getFormattedText());
     }
 	
 }

@@ -35,29 +35,17 @@ public class DiamondTaco extends ItemFood {
             }
         	player.addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST, duration + 5 * buffLength, 0, false, false));
         	
-        	potion = player.getActivePotionEffect(MobEffects.REGENERATION);
-            if(potion != null){
-            	duration = potion.getDuration();
-            }
-        	player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, duration + 15 * buffLength, 0, false, false));
-        	
         	potion = player.getActivePotionEffect(MobEffects.RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 30 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 10 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.FIRE_RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 30 * buffLength, 0, false, false));
-        	
-        	potion = player.getActivePotionEffect(MobEffects.INSTANT_HEALTH);
-            if(potion != null){
-            	duration = potion.getDuration();
-            }
-        	player.addPotionEffect(new PotionEffect(MobEffects.INSTANT_HEALTH, duration + 5 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 10 * buffLength, 0, false, false));
         }
     }
     
@@ -73,8 +61,6 @@ public class DiamondTaco extends ItemFood {
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.sdt_1").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.sdt_2").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.sdt_3").getFormattedText());
-		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.sdt_4").getFormattedText());
-		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.sdt_5").getFormattedText());
     }
 	
 }

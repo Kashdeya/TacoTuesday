@@ -33,37 +33,25 @@ public class EmeraldHardTaco extends ItemFood {
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST, duration + 10 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST, duration + 5 * buffLength, 1, false, false));
 
-        	potion = player.getActivePotionEffect(MobEffects.REGENERATION);
-            if(potion != null){
-            	duration = potion.getDuration();
-            }
-        	player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, duration + 30 * buffLength, 1, false, false));
-        	
         	potion = player.getActivePotionEffect(MobEffects.RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 10 * buffLength, 1, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.SPEED);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.SPEED, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.SPEED, duration + 10 * buffLength, 1, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.SATURATION);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, duration + 60 * buffLength, 1, false, false));
-        	
-        	potion = player.getActivePotionEffect(MobEffects.INSTANT_HEALTH);
-            if(potion != null){
-            	duration = potion.getDuration();
-            }
-        	player.addPotionEffect(new PotionEffect(MobEffects.INSTANT_HEALTH, duration + 10 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, duration + 10 * buffLength, 1, false, false));
         }
     }
     
@@ -80,8 +68,6 @@ public class EmeraldHardTaco extends ItemFood {
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.het_2").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.het_3").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.het_4").getFormattedText());
-		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.het_5").getFormattedText());
-		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.het_6").getFormattedText());
     }
 	
 }

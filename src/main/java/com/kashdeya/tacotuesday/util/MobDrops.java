@@ -58,174 +58,174 @@ public class MobDrops {
 					// Monster
 					if ((entity instanceof EntityBlaze)) {
 						if(CHANCE.nextFloat() < ConfigHandler.BlazeDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityCaveSpider)) {
 						if(CHANCE.nextFloat() < ConfigHandler.CaveDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityCreeper)) {
 						if(CHANCE.nextFloat() < ConfigHandler.CreeperDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityEnderman)) {
 						if(CHANCE.nextFloat() < ConfigHandler.EndermanDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityEndermite)) {
 						if(CHANCE.nextFloat() < ConfigHandler.EndermiteDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityGhast)) {
 						if(CHANCE.nextFloat() < ConfigHandler.GhastDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityGiantZombie)) {
 						if(CHANCE.nextFloat() < ConfigHandler.GiantDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityGuardian)) {
 						if(CHANCE.nextFloat() < ConfigHandler.GuardianDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityIronGolem)) {
 						if(CHANCE.nextFloat() < ConfigHandler.IronDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityMagmaCube)) {
 						if(CHANCE.nextFloat() < ConfigHandler.MagmaDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityPigZombie)) {
 						if(CHANCE.nextFloat() < ConfigHandler.PigZombieDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityPolarBear)) {
 						if(CHANCE.nextFloat() < ConfigHandler.PolarDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityShulker)) {
 						if(CHANCE.nextFloat() < ConfigHandler.ShulkerDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntitySilverfish)) {
 						if(CHANCE.nextFloat() < ConfigHandler.SilverfishDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntitySkeleton)) {
 						if(CHANCE.nextFloat() < ConfigHandler.SkeletonDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntitySlime)) {
 						if(CHANCE.nextFloat() < ConfigHandler.SlimeDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntitySnowman)) {
 						if(CHANCE.nextFloat() < ConfigHandler.SnowmanDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntitySpider)) {
 						if(CHANCE.nextFloat() < ConfigHandler.SpiderDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityWitch)) {
 						if(CHANCE.nextFloat() < ConfigHandler.WitchDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityZombie)) {
 						if(CHANCE.nextFloat() < ConfigHandler.ZombieDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					// Passive
 					if ((entity instanceof EntityBat)) {
 						if(CHANCE.nextFloat() < ConfigHandler.BatDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityChicken)) {
 						if(CHANCE.nextFloat() < ConfigHandler.ChickenDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityCow)) {
 						if(CHANCE.nextFloat() < ConfigHandler.CowDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityHorse)) {
 						if(CHANCE.nextFloat() < ConfigHandler.HorseDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityMooshroom)) {
 						if(CHANCE.nextFloat() < ConfigHandler.MooshroomDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityOcelot)) {
 						if(CHANCE.nextFloat() < ConfigHandler.OcelotDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityPig)) {
 						if(CHANCE.nextFloat() < ConfigHandler.PigDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityRabbit)) {
 						if(CHANCE.nextFloat() < ConfigHandler.RabbitDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntitySheep)) {
 						if(CHANCE.nextFloat() < ConfigHandler.SheepDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntitySquid)) {
 						if(CHANCE.nextFloat() < ConfigHandler.SquidDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityVillager)) {
 						if(CHANCE.nextFloat() < ConfigHandler.VillagerDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityWolf)) {
 						if(CHANCE.nextFloat() < ConfigHandler.WolfDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					// Bosses
 					if ((entity instanceof EntityDragon)) {
 						if(CHANCE.nextFloat() < ConfigHandler.DragonDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 					if ((entity instanceof EntityWither)) {
 						if(CHANCE.nextFloat() < ConfigHandler.WitherDropChance) {
-							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(4)), 0.0F);
+							entity.entityDropItem(new ItemStack(TacoItems.secret_spice,AMOUNT.nextInt(2)), 0.0F);
 						}						
 					}
 				}

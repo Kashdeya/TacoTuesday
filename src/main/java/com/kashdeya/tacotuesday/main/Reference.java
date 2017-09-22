@@ -4,7 +4,7 @@ public class Reference {
 	// Mod Constants
 	public static final String MOD_ID = "tt";
 	public static final String MOD_NAME = "Taco Tuesday";
-	public static final String VERSION = "0.0.10";
+	public static final String VERSION = "0.0.11 - Beta";
 	
 	// Proxy Constants
 	public static final String PROXY_CLIENT = "com.kashdeya.tacotuesday.proxy.ClientProxy";

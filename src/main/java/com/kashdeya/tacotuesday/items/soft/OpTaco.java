@@ -33,67 +33,61 @@ public class OpTaco extends ItemFood {
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.SPEED, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.SPEED, duration + 20 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.HASTE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.HASTE, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.HASTE, duration + 20 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.REGENERATION);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, duration + 30 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, duration + 5 * 20, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.SATURATION);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, duration + 60 * buffLength, 1, false, false));
-        	
-        	potion = player.getActivePotionEffect(MobEffects.INSTANT_HEALTH);
-            if(potion != null){
-            	duration = potion.getDuration();
-            }
-        	player.addPotionEffect(new PotionEffect(MobEffects.INSTANT_HEALTH, duration + 10 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, duration + 20 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.HEALTH_BOOST);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST, duration + 10 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST, duration + 10 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 20 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.FIRE_RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, duration + 20 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.LUCK);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.LUCK, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.LUCK, duration + 20 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.WATER_BREATHING);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, duration + 20 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.STRENGTH);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, duration + 20 * buffLength, 0, false, false));
         }
     }
     
@@ -116,7 +110,6 @@ public class OpTaco extends ItemFood {
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.opt_8").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.opt_9").getFormattedText());
 		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.opt_10").getFormattedText());
-		list.add(TextFormatting.YELLOW + new TextComponentTranslation("tooltip.opt_11").getFormattedText());
     }
 	
 }

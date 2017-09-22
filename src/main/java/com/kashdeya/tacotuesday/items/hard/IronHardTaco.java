@@ -33,19 +33,19 @@ public class IronHardTaco extends ItemFood {
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, duration + 60 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, duration + 10 * buffLength, 1, false, false));
         	
-        	potion = player.getActivePotionEffect(MobEffects.REGENERATION);
+        	potion = player.getActivePotionEffect(MobEffects.SLOWNESS);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, duration + 30 * buffLength, 1, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, duration + 5 * buffLength, 1, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.RESISTANCE);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 60 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, duration + 10 * buffLength, 1, false, false));
         }
     }
     

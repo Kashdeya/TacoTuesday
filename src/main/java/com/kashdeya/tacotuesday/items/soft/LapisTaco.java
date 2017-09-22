@@ -33,19 +33,19 @@ public class LapisTaco extends ItemFood {
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, duration + 15 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, duration + 5 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.LUCK);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.LUCK, duration + 30 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.LUCK, duration + 10 * buffLength, 0, false, false));
         	
         	potion = player.getActivePotionEffect(MobEffects.WATER_BREATHING);
             if(potion != null){
             	duration = potion.getDuration();
             }
-        	player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, duration + 30 * buffLength, 0, false, false));
+        	player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, duration + 10 * buffLength, 0, false, false));
         }
     }
     
